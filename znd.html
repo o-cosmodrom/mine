@@ -1,0 +1,61 @@
+<!--JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script>
+
+var gs = google.script.run;
+var gurl = google.script.url;
+
+
+var _select, _input, _div, _a, _ul, _root;
+_select = _input = _div = _a = _ul = _root = {};
+
+var selects = document.querySelectorAll("select");
+var inputs = document.querySelectorAll("input");
+var divs = document.querySelectorAll("div");
+var aHrefs = [...document.getElementsByTagName("a")] ;
+var uls = [...document.getElementsByTagName("ul")] ;
+
+Object.entries(inputs).map(function(e)
+{
+    var nn = e[1].id
+    _input[nn] = e[1];
+});
+
+Object.entries(selects).map(function(e)
+{
+    var nn = e[1].id
+    _select[nn] = e[1];
+});
+
+Object.entries(divs).map(function(e)
+{
+    var nn = e[1].id
+    _div[nn] = e[1];
+
+});
+
+aHrefs.map(function(e)
+{
+    var nn = e.id
+    _a[nn] = e;
+})
+
+uls.map(function(e)
+{
+   var nn = e.id
+    _ul[nn] = e.getElementsByTagName("li");
+})
+
+
+function trace(e) 
+{
+    var h = document.createElement("H3");
+    var t = document.createTextNode("» " + e);
+    h.appendChild(t);
+    document.body.appendChild(h);
+}  
+
+document.addEventListener('DOMContentLoaded', function(){ _root._load_first_() } );
+
+</script>
+<!--JS -->

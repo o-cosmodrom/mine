@@ -1,0 +1,104 @@
+<head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    
+    <style>
+      /* trocar indigo pelas cores */
+      /* label focus color */
+      .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label, .select-dropdown li:not(.disabled) span{
+       color: indigo !important;
+      }
+  
+      /* label underline focus color */
+      .input-field input[type=text]:focus, .input-field input[type=text].valid , .materialize-textarea:focus:not([readonly]), select-wrapper {
+       border-bottom: 1px solid indigo !important;
+       box-shadow: 0 1px 0 0 indigo !important;
+      }
+  
+.notAvaible {
+    text-decoration: line-through;
+    background-color: #8b124f;
+}
+
+  
+  .datepicker-date-display   {
+      background-color: #607d8b
+  }
+  
+  .datepicker-day-button:focus {
+      color: white !important;
+      background-color: #a2b0b6
+  }
+
+  blockquote {
+    border-left: 5px solid #607d8b;
+}
+  
+  .datepicker-done,
+  .datepicker-cancel,
+  .select-dropdown li>span,
+  .is-today {
+      color: #607d8b !important
+  }
+  
+  td.is-selected,
+  .month-prev:active,
+  .month-prev:focus,
+  .month-next:active,
+  .month-next:focus {
+      background-color: #607d8b !important
+  }
+  
+  td.is-selected.is-today {
+      color: white !important
+  }
+  
+  .checkboxes { opacity:0; }
+
+#toast-container {
+    display: block;
+    position: fixed;
+    z-index: 10000
+}
+@media only screen and (max-width: 600px) {
+    #toast-container {
+        min-width: 100%;
+        bottom: 0%
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #toast-container {
+        top: 50%;
+        left: 50%;
+   
+        max-width: 90%
+    }
+}
+@media only screen and (min-width: 993px) {
+    #toast-container {
+        top: 50%;
+        right: 50%;
+        max-width: 86%
+    }
+}
+  
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.lineShow
+{
+ border: 1px dashed red
+}
+
+
+
+</style>
+</head>
+<!-- HTML //-->
+
